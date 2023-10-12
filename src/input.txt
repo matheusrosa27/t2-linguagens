@@ -1,0 +1,4 @@
+S -> for (A;E) C
+A -> id = id
+E -> id op id
+C -> A | S
