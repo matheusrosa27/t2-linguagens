@@ -127,4 +127,16 @@ public class FirstAndFollowSetCalculator {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
     }
+
+    public Map<String, Set<String>> getFirstSets() {
+        return firstSets;
+    }
+
+    public Map<String, Set<String>> getFollowSets() {
+        return followSets;
+    }
+
+    public Map<String, List<String>> getProductions() {
+        return productions;
+    }
 }

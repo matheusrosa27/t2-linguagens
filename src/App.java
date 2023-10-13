@@ -58,5 +58,13 @@ public class App {
 
         // Print the FIRST and FOLLOW sets
         calculator.printFirstAndFollowSets();
+
+        // Create the predictive parser table
+        PredictiveParserTable parserTable = new PredictiveParserTable(calculator.getFirstSets(), calculator.getFollowSets(), calculator.getProductions());
+        
+        parserTable.buildParsingTable();
+        System.out.println("\n");
+        // Print the parsing table
+        parserTable.printParsingTable();
     }
 }
