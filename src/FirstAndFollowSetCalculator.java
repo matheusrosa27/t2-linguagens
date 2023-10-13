@@ -139,4 +139,8 @@ public class FirstAndFollowSetCalculator {
     public Map<String, List<String>> getProductions() {
         return productions;
     }
+
+    public String getStartSymbol() {
+        return startSymbol;
+    }
 }

@@ -79,4 +79,8 @@ public class PredictiveParserTable {
         }
       }
     }
+
+    public String getProduction(String nonTerminal, String terminal) {
+        return parsingTable.get(nonTerminal).get(terminal);
+    }
 }
